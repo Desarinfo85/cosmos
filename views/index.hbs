@@ -1,0 +1,97 @@
+  <!-- LE HEADER -->
+
+  <!-- JUMBOTRON UNIVERS -->
+  <header id="top" class="blog-header">
+    <div class="jumbotron change">
+
+      <h1>L'univers</h1>
+
+      <p class="lead text-white">est l'ensemble de tout ce qui existe, régi par un certain nombre de lois.</p>
+      <hr class="my-4">
+      <p class="text-white">À ce jour, aucune donnée scientifique ne permet de dire si l'Univers est fini ou infini.
+        Certains théoriciens penchent pour un Univers infini, d'autres pour un Univers fini mais non borné. 
+      </p>
+      <p class="lead">
+        <a class="btn btn-info btn-lg" role="button" href="#constell">En apprendre plus</a>
+      </p>
+    </div>
+  </header>
+
+  <!-- LA PRESENTATION -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>LE SYSTEME SOLAIRE</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ARTICLES -->
+  <section>
+    <div class="container">
+          {{#each response}}
+   <h2><a href="./articles/{{this.objectID}}">{{this.title}}</a></h2>
+       {{/each}}
+      {{#each posts}}
+      {{#if active}}
+   
+
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{{image}}" class="card-img-top front" alt="Système solaire">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <a href="/articles/{{_id}}">
+                <h5 class="card-title">{{title}}</h5>
+              </a>
+              <p aria-hidden="true" class="card-text"> {{{content}}} </p>
+              <p aria-hidden="true" class="card-text"> posté par : {{author}} le,
+                  {{moment createDate format="DD-MM-YY"}}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/if}}
+      {{/each}}
+       
+    </div>
+  </section>
+
+
+
+  <!-- JUMBOTRON CONSTELLATIONS -->
+
+  <section id="constell">
+    <div class="jumbotron jumbotron-fluid constellation" style="margin:auto;">
+      <div class="container">
+        <h2>LES CONSTELLATIONS</h2>
+        <p class="lead">Une constellation est un ensemble d'étoiles dont les projections sur la voûte céleste sont
+          suffisamment proches pour qu'une civilisation les relie par des lignes imaginaires pour créer une forme
+          quelconque.
+          </p>
+        <hr>
+
+      </div>
+    </div>
+  </section>
+
+
+    <!-- JUMBOTRON NEBULEUSES -->
+<section>
+    <div class="jumbotron jumbotron-fluid nebuleuse">
+      <div class="container">
+        <h2>LES NEBULEUSES</h2>
+        <p class="lead"> Une nébuleuse (du latin nebula, nuage) désigne, en astronomie, un objet céleste composé de gaz
+          raréfié, ionisé ou de poussières interstellaires. Avant les années 1920, le terme désignait tout objet du ciel
+          d’aspect diffus. Étudiées par des astrophysiciens spécialisés dans l'étude du milieu interstellaire, les
+          nébuleuses jouent un rôle clé dans la formation des étoiles.</p>
+        <hr>
+      </div>
+    </div>
+    <div>
+      <a class="btn btn-info btn-lg" style="float:right;" role="button" href="#top">HAUT</a>
+    </div>
+  </section>

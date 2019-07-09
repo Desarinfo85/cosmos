@@ -1,0 +1,41 @@
+{
+  "name": "cosmos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Desarinfo85/cosomos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Desarinfo85/cosomos/issues"
+  },
+  "homepage": "https://github.com/Desarinfo85/cosomos#readme",
+  "dependencies": {
+    "algoliasearch": "^3.33.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "express-form": "^0.12.6",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.16.2",
+    "express-static": "^1.2.6",
+    "handlebars-helpers": "^0.10.0",
+    "handlebars.moment": "^1.0.4",
+    "instantsearch.js": "^3.5.4",
+    "mongoolia": "^1.0.3",
+    "mongoose": "^5.6.2",
+    "mongoose-algolia": "^1.8.0",
+    "nodemon": "^1.19.1"
+  }
+}

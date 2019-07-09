@@ -1,0 +1,56 @@
+<!-- LA BARRE DE NAVIGATION -->
+
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">COSMOS BLOG</a>
+    {{#if user}}
+      <i class="fas fa-user prefix grey-text"> <h7>Bonjour : {{sess.name}} </h7></i>
+     {{/if}}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+      aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ 
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav ml-auto">
+
+        
+        {{#if user}}
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">Accueil </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/articles/add">Ajouter un article </a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="/userProfil">Editier profil</a>
+        </li>
+          
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Deconnexion </a>
+        </li>
+      
+       {{#if admin}}  
+        <li class="nav-item">
+          <a class="nav-link" href="/Admin">Panneau Administration </a>
+        </li>
+        <form class="form-inline my-2 my-lg-0" action="/index" method="GET">
+       <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search" name="q">
+       </form>
+
+      {{/if}}
+       {{else}}
+   
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#modalRegisterForm" href="/">Inscription</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#modalLoginForm" href="/">Connexion</a>
+        </li>
+
+          {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

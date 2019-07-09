@@ -1,0 +1,247 @@
+/* MON FICHIER CSS L'UNIVERS BLOG VERSION 1.0.0 */
+
+/* CREATION ORIGINAL DESMARETZ STEPHANE */
+
+/* GLOBAL CSS */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+   
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+h5{
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: underline;
+}
+p{
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+/* IMAGE ET ANIMATION DEBUT DU SITE*/
+.blog-header{
+    background-image: url('/images/orion.webp');
+}
+.change{
+    margin-top: 4rem;
+    background-image: url('/images/terre.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity:0;
+    -moz-animation: anim 2s linear forwards 2s;
+    -webkit-animation: anim 2s linear forwards 2s;
+    -o-animation: anim 2s linear forwards 2s;
+    -ms-animation: anim 2s linear forwards 2s;
+    animation: anim 2s linear forwards 2s;
+}
+@-moz-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@-webkit-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@-o-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@-ms-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+
+
+/* LES ARTICLES */
+.image-single{
+    
+    max-width: 30%;
+    min-width: 30%;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+.article-single{
+text-align: justify;
+line-height: 2rem;
+margin-top: 5rem;
+
+}
+.display-4{
+    margin-top: 10px;
+}
+ .front{
+    max-height:100%;
+     max-width:80%;
+     filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+
+
+/* JUMBOTRON */
+
+
+.jumbotron{
+    height: 100vh;
+
+}
+
+.constellation{
+    background-image: url(/images/constellation.webp);
+    background-attachment: fixed;
+    line-height: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+       
+}
+.nebuleuse{
+background-image: url('images/nebuleuse.webp');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.addarticle{
+margin-top: 25rem;
+height: 100vh;
+}
+/* PAGE AJOUT D'ARTICLE */
+
+.add {
+   justify-content: center;
+   margin-top: 8rem;
+}
+.main {
+    height: 100vh;
+}
+.page{
+    text-align: center;
+    margin-top: 10rem;
+    height: 100vh;
+
+}
+/* ADMIN */
+.admin{
+    height: 100vh;
+}
+.admin-articles{
+    margin-top: 5rem;
+    background-color: white;
+    
+}
+/* USER PROFILE ET EDIT */
+
+.profile{
+    margin-top: 5rem;
+    height: 100vh;
+}
+
+.profilUser{
+margin-top: 5rem;
+
+}
+.card-profile {
+    width: 340px;
+    margin: 50px auto;
+    background-color: #e6e5e1;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+  }
+  .card-profile .card-img-top {
+    border-radius: 0;
+  }
+  .card-profile .card-img-profile {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: -95px;
+    margin-bottom: 35px;
+    border: 5px solid #e6e5e1;
+  }
+  .card-profile .card-title {
+    margin-bottom: 50px;
+  }
+  .card-profile .card-title small {
+    display: block;
+    font-size: .6em;
+    margin-top: .2em;
+  }
+  .card-profile .card-links {
+    margin-bottom: 25px;
+  }
+	
+  @media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {    /* Forcer le tableau à ne plus être comme un tableau */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    /* Masquer les en-têtes de tableau */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr { border: 1px solid #ccc; }
+    
+    td {
+        /* Se comporter comme une "rangée" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    td:before {
+        /* Maintenant, comme un en-tête de tableau */
+        position: absolute;
+        /*Les valeurs haut / gauche imitent le remplissage */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    
+}
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+   }
+}
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 3;
+   }
+}
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 4;
+   }
+}
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 5;
+   }
+}
