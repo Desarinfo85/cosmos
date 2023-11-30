@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Desarinfo85/cosomos#readme",
   "dependencies": {
     "algoliasearch": "^3.33.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^2.0.3",
@@ -27,7 +27,7 @@
     "express": "^4.17.1",
     "express-fileupload": "^1.1.5",
     "express-form": "^0.12.6",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^7.0.0",
     "express-session": "^1.16.2",
     "express-static": "^1.2.6",
     "handlebars-helpers": "^0.10.0",
